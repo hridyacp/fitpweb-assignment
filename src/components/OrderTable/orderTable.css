@@ -1,0 +1,26 @@
+.customer-wrapper{
+    display: flex;
+    align-items: center;
+    height:100%;
+}
+.status-button{
+    padding:2%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d3d0d0;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  

@@ -1,0 +1,11 @@
+.sidenav-container{
+    background-color: #1f2029;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0 1% 0 1%;
+}
+.sideNav-icon:last-of-type {
+    margin-top: auto;
+  }

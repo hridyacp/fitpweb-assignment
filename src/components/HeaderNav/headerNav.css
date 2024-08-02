@@ -1,0 +1,40 @@
+.nav-container{
+    background-color: #1f2029;
+    padding:1% 0 1% 0;
+}
+input{
+    background-color: #292b2f;
+    border: none;
+    width:inherit;
+    color:white;
+}
+input::placeholder{
+    color:white;
+    font-size: 14px;
+    opacity: 0.6;
+}
+input:focus{
+    outline:none;
+}
+.search-wrapper{
+    width:40%;
+    background-color: #292b2f;
+    display: flex;
+    align-items: center;
+    padding:8px;
+ border-radius: 5px;
+}
+.icons-wrapper{
+    background-color: #292b2f;
+    border-radius: 50%;
+    height: 30px;
+    width:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+    .search-wrapper{
+        width:50%;
+    }
+  }
