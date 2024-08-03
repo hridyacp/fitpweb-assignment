@@ -13,23 +13,23 @@ const Activity=()=>{
     const series=[
         {
                   data: [
-                   4,4.5,6,5.5,2,6,9,16,4.5,12,4.5,8
+                   4,4.5,6.5,5.5,2,7.5,9,16,4.5,11,6,0
                   ],
                 },
                 {
                     data: [
-                     10,3,6,5,7,7.5,9,11,4,6
+                     10,3,6.5,5,7,6,12,12,6,7,0
                     ],
                   },
                   {
                     data: [
-                     0,0,5.5,0,0,5.5,0,8,8
+                     0,0,6,0,0,11,0,8,0,0
                     ],
                   },
     ]
 
     return(
-        <Grid container xs={12} md={12} rowSpacing={5} columnSpacing={5} justifyContent={"center"} alignItems={"center"} >
+        <Grid container xs={12} md={12} spacing={3} justifyContent={"center"} alignItems={"center"} >
 <Grid item xs={12} md={8} className="grid-container"> 
 <div className="graph-container">
     <div className="activity-wrapper">
@@ -44,9 +44,10 @@ const Activity=()=>{
     colors={['#7592f5']}
     grid={{ horizontal: true }}
       series={series}
-      xAxis={[{ scaleType: 'band', data: [5,9,11,13,15,17,19,21,23,25,27],disableTicks:"true", categoryGapRatio: 0.02,tickLabelStyle:{fontSize:"12px",fill:"white"}}]}
+      xAxis={[{ scaleType: 'band', data: [5,9,11,13,15,17,19,21,23,25,27],disableTicks:"true",tickLabelPlacement:"start", categoryGapRatio: 0.02,tickLabelStyle:{fontSize:"12px",fill:"white",marginLeft:"10px"}}]}
       yAxis={[{disableTicks:"true", disableLine:true,tickLabelStyle:{fontSize:"12px",fill:"white"}}]}
       height={250}
+      // tooltip={{trigger:'none'}}
       slotProps={{
         bar: {
           rx: 10,
@@ -66,7 +67,7 @@ const Activity=()=>{
                     </div>
   Goals
   <div className="forward-wrapper">
-  <IconContext.Provider value={{ color: "white", size: '15px', className: "global-class-name" }}>
+  <IconContext.Provider value={{ color: "white", size: '20px', className: "global-class-name" }}>
 <IoIosArrowForward />
                     </IconContext.Provider>
                     </div>
@@ -79,7 +80,7 @@ const Activity=()=>{
                     </div>
   Popular Dishes
   <div className="forward-wrapper">
-  <IconContext.Provider value={{ color: "white", size: '15px', className: "global-class-name" }}>
+  <IconContext.Provider value={{ color: "white", size: '20px', className: "global-class-name" }}>
 <IoIosArrowForward />
                     </IconContext.Provider>
                     </div>
@@ -93,7 +94,7 @@ const Activity=()=>{
                     </div>
  Menus
   <div className="forward-wrapper">
-  <IconContext.Provider value={{ color: "white", size: '15px', className: "global-class-name" }}>
+  <IconContext.Provider value={{ color: "white", size: '20px', className: "global-class-name" }}>
 <IoIosArrowForward />
                     </IconContext.Provider>
                     </div>

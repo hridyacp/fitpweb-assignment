@@ -7,6 +7,7 @@ input{
     border: none;
     width:inherit;
     color:white;
+    width:100%;
 }
 input::placeholder{
     color:white;
@@ -33,8 +34,14 @@ input:focus{
     justify-content: center;
     align-items: center;
 }
+.menuicon-container{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 8%;
+}
 @media only screen and (max-width: 600px) {
     .search-wrapper{
-        width:50%;
+        width:70%;
+        margin-left:10px;
     }
   }

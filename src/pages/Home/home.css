@@ -10,11 +10,21 @@
     font-weight: 700;
 }
 .dashboard-wrapper{
-    padding: 2%;
+    padding: 2% 2% 2% 4%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5em;
     width:100%;
 }
+
+@media only screen and (max-width: 900px) {
+    .dashboard-wrapper{
+       padding-left:6%;
+       padding-right:10%;
+    }
+    .heading-container{
+        padding-top: 3%;
+    }
+  }

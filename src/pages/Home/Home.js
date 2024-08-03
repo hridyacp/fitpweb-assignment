@@ -14,8 +14,8 @@ const Home=()=>{
      <div className="main-container">
      <SideNav />
      <div className="dashboard-wrapper"> 
-        <h2>Dashboard</h2>
-     <Profit />
+        <Grid container xs={12} className="heading-container"><h2>Dashboard</h2></Grid>
+        <Profit />
      <Activity />
      <RecentOrder />
      </div>

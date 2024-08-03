@@ -40,8 +40,7 @@ const Profit=()=>{
         }
 ]
     return(
-      
-        <Grid container xs={12} md={12} rowSpacing={5} columnSpacing={5} justifyContent={"center"} alignItems={"center"} >
+        <Grid container xs={12} md={12} spacing={3} >
 {orderDetail?.map((item,index)=>{
     return(
 <Grid item xs={6} md={2} className="grid-container">
@@ -76,6 +75,7 @@ const Profit=()=>{
 <IoMdArrowDropup />
             </IconContext.Provider>3%</div>
       </div>
+      <div className="progressbar-wrapper">
     <Box position="relative" display="inline-flex">
      <CircularProgress
         variant="determinate"
@@ -104,7 +104,8 @@ const Profit=()=>{
             </Typography>
           </Box>
         </Box> 
-
+        <div style={{fontSize:"8px"}}>*The vlaues here have been rounded off</div>
+</div>
         </div>
         </Grid>  
         </Grid>

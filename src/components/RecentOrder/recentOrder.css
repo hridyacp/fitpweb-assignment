@@ -31,16 +31,19 @@
     align-items: center;
     gap:1em;
 }
+.review-end{
+  padding-bottom: 4%;
+  border-bottom: 1px solid white;
+}
 ::-webkit-scrollbar {
     width: 10px;
   }
-  /* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: #d3d0d0;
     border-radius: 10px;
   }
-  
-  /* Track */
+ 
   ::-webkit-scrollbar-track {
     background: none;
   }
@@ -49,5 +52,11 @@
 @media only screen and (min-width: 900px) {
     .grid-container{
         height:100%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .table-container{
+      padding:3%;
     }
   }

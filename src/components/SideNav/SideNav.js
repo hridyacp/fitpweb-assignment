@@ -9,6 +9,7 @@ import { GrDocumentLocked } from "react-icons/gr";
 const SideNav=()=>{
     return(
         <div className="sidenav-container">
+             
             <div className="sideNav-icon">
             <IconContext.Provider value={{ color: "#7592f5", size: '30px', className: "global-class-name" }}>
             <IoMdHome />
