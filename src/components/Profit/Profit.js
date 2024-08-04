@@ -67,14 +67,12 @@ const Profit=()=>{
     )
 })}
           <Grid item xs={12} md={4}  className="grid-container">
-       <div className="netprofit-container" >
+       <div className="totalprofit-container" >
+        <div className="netprofit-container">
         <div className="netprofit-wrapper">
         <div style={{textAlign:"left"}}>Net Profit</div>
         <div className="netprofit-heading">$6759.25</div>
-        <div style={{color:"green",display:"flex",alignItems:"center"}}><IconContext.Provider value={{ color: "green", size: '30px', className: "global-class-name" }}>
-<IoMdArrowDropup />
-            </IconContext.Provider>3%</div>
-      </div>
+        </div>
       <div className="progressbar-wrapper">
     <Box position="relative" display="inline-flex">
      <CircularProgress
@@ -104,9 +102,16 @@ const Profit=()=>{
             </Typography>
           </Box>
         </Box> 
-        <div style={{fontSize:"8px"}}>*The vlaues here have been rounded off</div>
+       
 </div>
-        </div>
+</div>
+<div className="netprofit-container">
+<div style={{color:"green",display:"flex",alignItems:"center"}}><IconContext.Provider value={{ color: "green", size: '30px', className: "global-class-name" }}>
+<IoMdArrowDropup />
+            </IconContext.Provider>3%</div>
+            <div style={{fontSize:"8px"}}>*The vlaues here have been rounded off</div>
+      </div>
+</div>
         </Grid>  
         </Grid>
       
