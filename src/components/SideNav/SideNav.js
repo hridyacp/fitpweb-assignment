@@ -36,7 +36,7 @@ const SideNav=()=>{
             </IconContext.Provider>
             </div>
             <div className="sideNav-icon">
-            <IconContext.Provider value={{ color: "white", size: '30px', className: "global-class-name" }}>
+            <IconContext.Provider value={{ color: "white", size: '25px', className: "global-class-name" }}>
             <IoMdLogOut />
             </IconContext.Provider>
             </div>

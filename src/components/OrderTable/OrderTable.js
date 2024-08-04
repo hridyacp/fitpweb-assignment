@@ -41,7 +41,7 @@ const OrderTable=()=>{
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
                 <StyledTableCell component="th" scope="row" sx={{display:"flex",alignItems:"center",gap:"2em"}}>
-                 <img src={row.img} alt="profile" width="50px" height="50px" style={{borderRadius:"50%"}}/>
+                 <img src={row.img} alt="profile" width="40px" height="40px" style={{borderRadius:"50%"}}/>
                  {row.customer}
                 </StyledTableCell>
                 <StyledTableCell >{row.orderNo}</StyledTableCell>

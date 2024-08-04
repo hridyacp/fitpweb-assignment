@@ -45,9 +45,9 @@ const Activity=()=>{
     grid={{ horizontal: true }}
       series={series}
       xAxis={[{ scaleType: 'band', data: [5,9,11,13,15,17,19,21,23,25,27],disableTicks:"true",tickLabelPlacement:"start", categoryGapRatio: 0.02,tickLabelStyle:{fontSize:"12px",fill:"white"}}]}
-      yAxis={[{disableTicks:"true", disableLine:true,tickLabelStyle:{fontSize:"12px",fill:"white"}}]}
+      yAxis={[{valueFormatter: (value) =>{ if(value!==0){return`${(value).toLocaleString()}K`}else{return value}},disableTicks:"true", disableLine:true,tickLabelStyle:{fontSize:"12px",fill:"white"}}]}
       height={250}
-      // tooltip={{trigger:'none'}}
+      tooltip={{trigger:'none'}}
       slotProps={{
         bar: {
           rx: 10,
