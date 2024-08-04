@@ -29,7 +29,7 @@ const Activity=()=>{
     ]
 
     return(
-        <Grid container xs={12} md={12} spacing={3} justifyContent={"center"} alignItems={"center"} >
+        <Grid container xs={11} md={12} spacing={3} justifyContent={"center"} alignItems={"center"} >
 <Grid item xs={12} md={8} className="grid-container"> 
 <div className="graph-container">
     <div className="activity-wrapper">

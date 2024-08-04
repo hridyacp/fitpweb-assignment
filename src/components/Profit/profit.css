@@ -2,7 +2,7 @@
     background-color: #1f2029;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     gap:0.8rem;
     border-radius: 10px;

@@ -40,7 +40,7 @@ const Profit=()=>{
         }
 ]
     return(
-        <Grid container xs={12} md={12} spacing={3} >
+        <Grid container xs={11} md={12} spacing={3} >
 {orderDetail?.map((item,index)=>{
     return(
 <Grid item xs={6} md={2} className="grid-container">
@@ -50,7 +50,7 @@ const Profit=()=>{
     {item?.icon}
             </IconContext.Provider>
             </div>
-      <div>
+      <div style={{textAlign:"left"}}>
         {item?.name}
       </div>
       <div className="profit-wrapper">

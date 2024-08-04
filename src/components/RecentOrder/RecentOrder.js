@@ -7,7 +7,7 @@ import { IconContext } from 'react-icons';
 import { FaStar } from 'react-icons/fa';
 const RecentOrder=()=>{
     return(
-        <Grid container xs={12} md={12} spacing={3} justifyContent={"center"} alignItems={"center"}>
+        <Grid container xs={11} md={12} spacing={3} justifyContent={"center"} alignItems={"center"}>
             <Grid item xs={12} md={8} className="grid-container">
             <div className='table-container'>
                 <div style={{fontSize:"18px",fontWeight:600}}>Recent Orders</div>

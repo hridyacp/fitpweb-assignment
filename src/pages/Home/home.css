@@ -10,6 +10,7 @@
     font-weight: 700;
 }
 .dashboard-wrapper{
+    background-color: black;
     padding: 2% 2% 2% 4%;
     display: flex;
     flex-direction: column;
@@ -19,10 +20,10 @@
     width:100%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     .dashboard-wrapper{
        padding-left:6%;
-       padding-right:10%;
+       padding-right:6%;
     }
     .heading-container{
         padding-top: 3%;
